@@ -1,0 +1,47 @@
+Methodology  -
+This study integrates historical trader-level transaction data from the Hyperliquid platform with sentiment data from the Bitcoin market (the Fear & Greed Index).
+To investigate the effects of market sentiment on trader behavior and performance, both datasets were aligned at a daily granularity.
+
+Important behavioral indicators were created for each trader each day, such as:
+Profit and loss per day (PnL)
+The quantity of transactions
+Average size of trade
+Leverage average (proxy)
+ratio of long-to-short trades
+Rate of victory
+
+Fear and Greed regimes were used to categorize market sentiment.
+To assess variations in performance and behavior among these regimes, statistical comparisons and visual analysis were employed.
+In order to predict daily trader profitability, a baseline Logistic Regression model was also constructed using sentiment and 
+behavioral features. For efficiency and generalization, high-cardinality identifiers were eliminated.
+
+Insights  -
+
+Sentiment regime affects performance differently.
+Fear days cause Trader PnL to be more erratic, with a greater range of gains and losses. On greed days, average performance is comparatively more consistent and favorable.
+
+Changes in behavior when experiencing fear
+Traders typically decrease average position size and increase trade frequency and leverage during fear regimes. This implies trading behavior that is emotional or reactive.
+
+Sentiment risk is increased by leverage.
+While gains during Greed days are not proportionately higher, high-leverage traders perform noticeably worse during Fear days than low-leverage traders.
+
+Well-behaved traders perform better than
+Better risk management is demonstrated by traders who trade less frequently and maintain consistent position sizes, as evidenced by their more stable performance across both sentiment regimes.
+
+Strategy Recommendations - 
+
+Control of Fear Regime Risk
+To prevent increased losses brought on by market volatility and emotional overtrading, traders should limit trade frequency and reduce leverage during fear periods.
+
+Optimization of the Greed Regime
+Keeping disciplined leverage while permitting slightly larger position sizes can increase returns during Greed periods without appreciably raising risk.
+
+Trading by Segment
+Consistent, low-frequency traders profit from sticking to stable strategies across regimes, while high-leverage and high-frequency traders should implement more stringent 
+risk controls based on sentiment.
+
+
+
+
+
