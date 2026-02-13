@@ -26,9 +26,20 @@ Create a baseline forecasting model for the profitability of traders.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 How to Run This Project : -->
 
-Clone the project using link at top-right
+--> Clone the project using link at top-right
 
-install required libraries:
+--> Move both the datasets into this folder which we downloaded from the given link:
+1) Bitcoin Market Sentiment (Fear/Greed)
+Columns: Date, Classification (Fear / Greed)
+Link: https://drive.google.com/file/d/1PgQC0tO8XN-wqkNyghWc_-mnrYv_nhSf/view?usp=sharing
+
+2) Historical Trader Data (Hyperliquid)
+Includes fields like: account, symbol, execution price, size, side, time, start position, event, closedPnL, leverage, etc.
+Link: https://drive.google.com/file/d/1IAfLZwu6rJzyWKgBToqwSmmVYU6VbjVs/view?usp=sharing
+Please check for the download symbol in the left link 
+
+
+--> install required libraries:
 pip install pandas numpy matplotlib scikit-learn
 
-run task.ipynb cell by cell
+--> run task.ipynb cell by cell
